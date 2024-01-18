@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.views import View
 from .models import User, Message
-
 class ChatView(View):
     template_name = 'messaging/chat.html'
 
