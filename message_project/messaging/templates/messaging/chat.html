@@ -10,6 +10,9 @@
             <p><strong>{{ message.sender.username }}:</strong> {{ message.content }}</p>
         {% endfor %}
     </div>
+
+    <hr>
+
     <form method="post" action="{% url 'chat' %}">
         {% csrf_token %}
         {{ form.as_p }}
